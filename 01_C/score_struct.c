@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-typedef struct
+typedef struct//这个是由AI教的,稍微看懂了
 {
     char name[101];
     float score;
@@ -13,8 +13,7 @@ int main()
     printf("输入你想存多少个学生的信息: ");
     scanf("%d",&n);
     sj = (st*)malloc( n * sizeof(st));
-    sj = (st *)malloc(n*sizeof(st));
-    if(sj == NULL)
+    if(sj == NULL)//这段是AI教的
     {
         printf("内存分配失败\n");
         return -1;
@@ -28,7 +27,7 @@ int main()
     }
     printf("存储完毕!\n");
     int a;
-    do
+    do//do while的小用法
     {
         printf("输入你想查询第几个学生的成绩: (输入0退出,输入1000打印全部数据) ");
         scanf("%d",&a);
