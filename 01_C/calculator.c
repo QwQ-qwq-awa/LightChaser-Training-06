@@ -1,10 +1,11 @@
 #include<stdio.h>
 int main()
 {
+    //多分支的判断与do while应用,不知道写啥注释
     int a,b,c,d;
     printf("输入你想计算的法则:(加法请输入1,减法请输入2,乘法请输入3,除法请输入4,求余请输入5)");
     scanf("%d",&c);
-    if(c==1)
+    if(c == 1)
     {
         printf("你选择了加法\n");
         printf("输入两个数字：");
@@ -12,7 +13,7 @@ int main()
         d = a + b;
         printf("结果是：%d\n", d);
     }
-    else if(c==2)
+    else if(c == 2)
     {
         printf("你选择了减法\n");
         printf("输入两个数字：");
@@ -20,7 +21,7 @@ int main()
         d = a - b;
         printf("结果是：%d\n", d);
     }
-    else if(c==3)
+    else if(c == 3)
     {
         printf("你选择了乘法\n");
         printf("输入两个数字：");
