@@ -13,6 +13,12 @@ int main()
     printf("输入你想存多少个学生的信息: ");
     scanf("%d",&n);
     sj = (st*)malloc( n * sizeof(st));
+    sj = (st *)malloc(n*sizeof(st));
+    if(sj == NULL)
+    {
+        printf("内存分配失败\n");
+        return -1;
+    }
     for(int i = 0; i <= n - 1; i++)
     {
         printf("请输入第%d个同学名字 ",i + 1);
@@ -20,7 +26,7 @@ int main()
         printf("请输入第%d个同学分数 ",i + 1);
         scanf("%f",&sj[i].score);
     }
-    printf("存储完毕!");
+    printf("存储完毕!\n");
     int a;
     do
     {
