@@ -2,7 +2,7 @@
 int main()
 {
     int a,b,c,d;
-    printf("输入你想计算的法则：（加法请输入1，减法请输入2，乘法请输入3，除法请输入4，求余请输入5）");
+    printf("输入你想计算的法则:(加法请输入1,减法请输入2,乘法请输入3,除法请输入4,求余请输入5)");
     scanf("%d",&c);
     if(c==1)
     {
@@ -28,35 +28,35 @@ int main()
         d = a * b;
         printf("结果是：%d\n", d);
     }
-    else if(c==4)
+    else if(c == 4)
     {
         printf("你选择了除法\n");
-        printf("输入两个数字：");
-        scanf("%d %d",&a,&b);
-        if(b==0)
+        do
         {
-            printf("除数不能为零，请重新输入\n");
-        }
-        else
-        {
-            d = a / b;
-            printf("结果是：%d\n", d);
-        }
+            printf("输入两个数字：");
+            scanf("%d %d",&a,&b);
+            if(b == 0)
+            {
+                printf("除数不能为零，请重新输入\n");
+            }
+        }while(b == 0);
+        d = a / b;
+        printf("结果是：%d\n", d);
     }
-    else if(c==5)
+    else if(c == 5)
     {
         printf("你选择了求余\n");
-        printf("输入两个数字：");
-        scanf("%d %d",&a,&b);
-        if(b==0)
+        do
         {
-            printf("除数不能为零，请重新输入\n");
-        }
-        else
-        {
-            d = a % b;
-            printf("结果是：%d\n", d);
-        }
+            printf("输入两个数字：");
+            scanf("%d %d",&a,&b);
+            if(b == 0)
+            {
+                printf("除数不能为零，请重新输入\n");
+            }
+        }while(b == 0);
+        d = a % b;
+        printf("结果是：%d\n", d);    
     }
     else
     {
