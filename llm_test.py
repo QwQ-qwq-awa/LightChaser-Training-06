@@ -8,7 +8,7 @@ client = OpenAI(
     base_url="https://api.deepseek.com",   # ★ 这是关键：换成 DeepSeek 的地址
 )
 resp = client.chat.completions.create(
-    model="deepseek-float",          # 或 deepseek-reasoner（推理版）
+    model="deepseek-reasoner",          # 或 deepseek-reasoner（推理版）
     messages=[
         {"role": "system", "content": "你是一名耐心的大一助教"},
         {"role": "user", "content": "用三句话解释什么是边缘检测"},
