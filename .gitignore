@@ -1,4 +1,4 @@
 01_C/calculator.exe
 .exe
-.env
 .venv/
+API.env
